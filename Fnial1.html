@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Fnial2.css">
+</head>
+<body>
+    <div class="box">
+            <h1>Insert date</h1>
+    <div>
+    <p>ชื่อ</p>
+    <input id="name" type="text" onfocus="Focus_Name(this)"  onblur="Blur_Name(this)" onchange="submit()">
+    </div>
+    <div>
+        <p>นามสกุล</p>
+        <input id="surname" type="text" onfocus="Focus_Surname(this)"  onblur="Blur_Surname(this)" onchange="submit()">
+    </div>
+
+
+
+
+    <p id="seleced">
+        <label>เพศ</label>
+        <select id="menu" onchange="submit()" style="margin-left: 10px;">
+        <option value="ไม่ระบุ">ไม่ระบุ</option>
+        <option value="ชาย">ชาย</option>
+        <option value="หญิง">หญิง</option>
+        </select>
+    </p>
+
+    <div style="display: inline;">
+        <p id="date">วันเกิด</p>
+        <input id="datee" type="date" style="margin-top: 0%;" onchange="submit()">
+    </div>
+
+
+    <button onclick="submit()">Add</button>
+    <h1 id="output"></h1>
+    <script src="Fnial3.js" ></script>
+    </div>
+</body>
+</html>
